@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminLogin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-59dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
+                android:text="@string/admin_msg"
+                android:textColor="@color/black"
+                android:textFontWeight="@integer/material_motion_duration_long_2"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/admin_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.44"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/admin_email"
+                android:layout_width="280dp"
+                android:layout_height="54dp"
+                android:background="@drawable/input_box"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/admin_password"
+                android:textColor="@color/white"
+                android:hint="@string/input_msg_email"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/admin_password"
+                android:layout_width="280dp"
+                android:layout_height="54dp"
+                android:background="@drawable/input_box"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/admin_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                android:textColor="@color/white"
+                android:hint="@string/input_msg_email"
+                android:textColorHint="@color/white"
+                />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="174dp"
+                android:layout_height="44dp"
+                android:text="submit"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/admin_email"
+                tools:ignore="TextSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>
