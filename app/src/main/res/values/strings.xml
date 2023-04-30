@@ -9,6 +9,7 @@
     <string name="nav_close">Close</string>
     <string name="admin_msg">Admin Login</string>
     <string name="input_msg_email">enter email</string>
+    <string name="input_msg_password">enter password</string>
     <string name="about">About</string>
     <string name="v_1_0_a">Version : V.1.0.a</string>
     <string name="developer">Developed with ❤️ by  Divyansh </string>
@@ -18,4 +19,7 @@
     <string name="issues">Report Issue</string>
     <string name="Clubs">Clubs</string>
     <string name="events">Events</string>
+    <string name="about_event">enter  about the event</string>
+    <string name="event_name">Enter Event Name</string>
+    <string name="event_date_text">Event Date</string>
 </resources>

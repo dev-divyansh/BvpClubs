@@ -43,7 +43,7 @@ class clubsActivity : AppCompatActivity() {
                 R.id.AdminLogin -> {
                     val intent = Intent(this , AdminLogin::class.java)
                     startActivity(intent)
-                    finish()
+
                 }
                 R.id.app_feedback -> {
                     Toast.makeText(this , "feedback clicked " , Toast.LENGTH_LONG).show()
